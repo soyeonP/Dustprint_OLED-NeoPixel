@@ -21,15 +21,13 @@ Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, D0, NEO_GRB + NEO_KHZ800
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-#define NUMFLAKES     19 // Number of snowflakes in the animation example
-
 #define LOGO_HEIGHT   16
 #define LOGO_WIDTH    16
 
 //wifi정의
 String city = "서울"; // 서울, 부산, 대구, 인천, 광주, 대전, 울산, 경기, 강원, 충북, 충남, 전북, 전남, 경북, 경남, 제주, 세종 중 입력
 String gu = "용산구";
-String key = "nP6NBdnElmAi%2BPRK%2B%2F%2FTMw%2Fq80%2B1vwK2cAck%2FiiTiwWARg4ZEEudXBEfL6a7rK7D0eSfXPRlQu5BLPemPOqiYw%3D%3D";
+String key = "";
 String url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst?sidoName=" + city + "&searchCondition=HOUR&pageNo=1&numOfRows=200&ServiceKey=" + key;
 float pm10,pm25 = 0 ; 
 int score = 0 ;
